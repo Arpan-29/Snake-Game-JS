@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+}
+.main-screen{
+    background-color: rgb(99, 99, 99);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#board{
+    position: relative;
+    text-align: center;
+    background-color: black;
+    width: 98vmin;
+    height: 98vmin;
+    border: 1px solid white;
+    display: grid;
+}
+.snake{
+    width: 95%;
+    height: 95%;
+    background-color: rgb(52, 233, 52);
+}
+.food{
+    width: 95%;
+    height: 95%;
+    background-color:red;
+}
+.score{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: white;
+    opacity: 0.5;
+    font-size: 30px;
+}
+.game-over-container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.game-over{
+    color: orange;
+    font-size: 40px;
+    font-weight: 900;
+}
+.all-scores{
+    color: white;
+    font-size: 30px;
+}
+.play-again{
+    background-color: grey;
+    margin: 10px;
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
